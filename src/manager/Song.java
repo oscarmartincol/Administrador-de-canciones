@@ -55,20 +55,42 @@ public class Song {
         this.description = description;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public String getCover() {
+        return cover;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
     /**
      * Método para mostrar los datos de la canción
      * @return Atributos de la canción
      */
     @Override
     public String toString() {
-        return "Canción{" +
-                "titulo='" + title + '\'' +
-                ", id=" + id +
-                ", año=" + year +
-                ", duracion='" + duration + '\'' +
-                ", genero='" + genre + '\'' +
-                ", caratula='" + cover + '\'' +
-                ", descripción='" + description + '\'' +
-                '}';
+        return "Id: " + getId() + " Titulo: " + getTitle() + " año: " + getYear() + " Genero: "
+                + getGenre() + " Caratula: " + getCover() + " Duración: " + getDuration()
+                + " Descripción: " + getDescription() + "\n";
     }
 }
